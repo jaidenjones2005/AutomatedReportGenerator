@@ -33,3 +33,23 @@ The most interesting part was seeing how the same
 template method could produce different results
 without changing the overall execution sequence.
 
+
+## Phase 3: Conditional Behavior with a Boolean Hook
+
+In this phase, I added an optional maintenance check
+to the VehicleReport template method.
+
+I created the shouldCheckMaintenance() hook, which
+returns false by default. I then overrode it in
+TruckReport to return true.
+
+This allows trucks to perform a maintenance check
+while bikes skip it.
+
+I learned that abstract methods require subclasses
+to provide an implementation, while boolean hooks
+allow subclasses to optionally change behavior.
+
+The hook makes the Template Method pattern more
+flexible without changing the overall workflow.
+
