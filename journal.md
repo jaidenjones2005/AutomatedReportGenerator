@@ -53,3 +53,29 @@ allow subclasses to optionally change behavior.
 The hook makes the Template Method pattern more
 flexible without changing the overall workflow.
 
+
+## Phase 4: Validation & Reflection
+
+In this phase, I tested the Automated Report Generator
+to verify that both vehicle types followed the correct
+workflow.
+
+I checked that the truck report collected GPS data,
+formatted heavy cargo dimensions, performed a
+maintenance check, and logged the report.
+
+I also verified that the bike report collected GPS
+data, formatted lightweight parcel dimensions,
+skipped maintenance, and logged the report.
+
+The main concept I reinforced was how the Template
+Method pattern keeps the execution sequence consistent
+while allowing subclasses to customize certain steps.
+
+I also learned that boolean hooks provide optional
+behavior without requiring every subclass to implement
+the same method.
+
+Overall, this project helped me better understand
+abstract classes, inheritance, final methods, and
+the Template Method design pattern.
